@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+  <Header />
+  <main class="max-w-3xl mx-auto px-4 py-20 prose prose-sm">
+    <h1 class="text-4xl font-bold text-text-heading">Termos de Uso</h1>
+    <p class="text-text-muted">&Uacute;ltima atualiza&ccedil;&atilde;o: 01/08/2026</p>
+
+    <h2>1. Aceita&ccedil;&atilde;o</h2>
+    <p>
+      Ao utilizar o MentAll, voc&ecirc; concorda com estes termos. Se n&atilde;o concordar,
+      n&atilde;o utilize o aplicativo.
+    </p>
+
+    <h2>2. Uso do servi&ccedil;o</h2>
+    <p>
+      O MentAll &eacute; uma ferramenta de apoio documental para profissionais de psicologia.
+      Ele n&atilde;o substitui o julgamento cl&iacute;nico, o racioc&iacute;nio profissional
+      ou a responsabilidade &eacute;tica do psic&oacute;logo.
+    </p>
+
+    <h2>3. IA como apoio, n&atilde;o como substituto</h2>
+    <p>
+      As s&iacute;nteses, an&aacute;lises e artigos gerados pela IA s&atilde;o sugest&otilde;es
+      de apoio documental. Toda decis&atilde;o cl&iacute;nica &eacute; de responsabilidade
+      exclusiva do profissional. O conte&uacute;do gerado por IA deve ser revisado antes
+      de ser incorporado ao prontu&aacute;rio.
+    </p>
+
+    <h2>4. Responsabilidades do profissional</h2>
+    <ul>
+      <li>Obter consentimento do paciente para grava&ccedil;&atilde;o e uso de IA</li>
+      <li>Revisar todo conte&uacute;do gerado por IA antes de finalizar o prontu&aacute;rio</li>
+      <li>Manter o PIN de acesso em seguran&ccedil;a</li>
+      <li>N&atilde;o compartilhar o app ou o dispositivo com terceiros</li>
+    </ul>
+
+    <h2>5. Limita&ccedil;&atilde;o de responsabilidade</h2>
+    <p>
+      O MentAll &eacute; fornecido "como est&aacute;". N&atilde;o nos responsabilizamos
+      por perda de dados causada por falha do dispositivo, exclus&atilde;o acidental
+      ou uso indevido do PIN de acesso. Recomendamos backups regulares.
+    </p>
+
+    <h2>6. Contato</h2>
+    <p>
+      D&uacute;vidas sobre os termos: <a href="mailto:contato@mentallpro.com.br" class="text-primary">contato@mentallpro.com.br</a>.
+    </p>
+  </main>
+  <Footer />
+</BaseLayout>

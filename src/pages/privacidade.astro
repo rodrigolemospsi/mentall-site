@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+  <Header />
+  <main class="max-w-3xl mx-auto px-4 py-20 prose prose-sm">
+    <h1 class="text-4xl font-bold text-text-heading">Pol&iacute;tica de Privacidade</h1>
+    <p class="text-text-muted">Última atualiza&ccedil;&atilde;o: 01/08/2026</p>
+
+    <h2>1. Introdu&ccedil;&atilde;o</h2>
+    <p>
+      O MentAll &eacute; um aplicativo para prontu&aacute;rio cl&iacute;nico com assist&ecirc;ncia de IA.
+      Esta pol&iacute;tica explica como tratamos os dados dos profissionais e de seus pacientes,
+      em conformidade com a Lei Geral de Prote&ccedil;&atilde;o de Dados (LGPD &mdash; Lei 13.709/2018).
+    </p>
+
+    <h2>2. Dados armazenados localmente</h2>
+    <p>
+      O MentAll armazena todos os dados cl&iacute;nicos (prontu&aacute;rios, sess&otilde;es,
+      informa&ccedil;&otilde;es de pacientes, &aacute;udios, transcri&ccedil;&otilde;es) exclusivamente
+      no dispositivo do profissional, com criptografia AES-256-CBC e prote&ccedil;&atilde;o por PIN.
+      Esses dados n&atilde;o s&atilde;o enviados para nenhum servidor sem a&ccedil;&atilde;o expl&iacute;cita
+      do profissional.
+    </p>
+
+    <h2>3. Dados enviados para a nuvem</h2>
+    <p>
+      Quando o profissional solicita transcri&ccedil;&atilde;o de &aacute;udio ou s&iacute;ntese por IA,
+      os seguintes dados s&atilde;o enviados para nosso backend (Render.com, EUA):
+    </p>
+    <ul>
+      <li>Arquivo de &aacute;udio ou transcri&ccedil;&atilde;o (pseudonimizado)</li>
+      <li>Nome do paciente com pseudonimiza&ccedil;&atilde;o (apenas primeiro nome + iniciais)</li>
+      <li>Abordagem cl&iacute;nica selecionada</li>
+    </ul>
+    <p>
+      O &aacute;udio &eacute; processado pela API da OpenAI (gpt-4o-transcribe) e imediatamente
+      descartado ap&oacute;s a transcri&ccedil;&atilde;o. Nenhum dado cl&iacute;nico &eacute;
+      armazenado permanentemente em nossos servidores.
+    </p>
+
+    <h2>4. Consentimento</h2>
+    <p>
+      O profissional &eacute; respons&aacute;vel por obter o consentimento de seus pacientes
+      para o uso do MentAll, incluindo a grava&ccedil;&atilde;o de &aacute;udio e o processamento
+      por IA. O app inclui um Acordo Terap&ecirc;utico que pode ser enviado ao paciente.
+    </p>
+
+    <h2>5. Direitos do titular</h2>
+    <p>
+      O profissional pode exportar ou excluir seus dados a qualquer momento atrav&eacute;s
+      das fun&ccedil;&otilde;es de backup e restaura&ccedil;&atilde;o do app. O paciente
+      pode solicitar acesso, corre&ccedil;&atilde;o ou exclus&atilde;o de seus dados
+      diretamente ao profissional respons&aacute;vel.
+    </p>
+
+    <h2>6. Contato</h2>
+    <p>
+      D&uacute;vidas sobre privacidade: <a href="mailto:contato@mentallpro.com.br" class="text-primary">contato@mentallpro.com.br</a>.
+    </p>
+  </main>
+  <Footer />
+</BaseLayout>

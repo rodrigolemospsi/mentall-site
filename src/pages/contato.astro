@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+  <Header />
+  <main class="max-w-3xl mx-auto px-4 py-20">
+    <h1 class="text-4xl font-bold text-text-heading">Contato</h1>
+    <p class="text-text-muted mt-3">Fale com a gente. Respondemos em at&eacute; 24h.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
+      <div>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-5">
+          <div>
+            <label class="block text-sm font-medium text-text-heading mb-1">Nome</label>
+            <input type="text" name="nome" required
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-text-heading mb-1">Email</label>
+            <input type="email" name="email" required
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-text-heading mb-1">Mensagem</label>
+            <textarea name="mensagem" rows="4" required
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary"></textarea>
+          </div>
+          <button type="submit"
+            class="bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3 rounded-xl transition-colors">
+            Enviar mensagem
+          </button>
+        </form>
+      </div>
+
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-semibold text-text-heading text-sm">Email</h3>
+          <a href="mailto:contato@mentallpro.com.br" class="text-primary text-sm">contato@mentallpro.com.br</a>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-heading text-sm">WhatsApp</h3>
+          <a href="https://wa.me/5511999999999" target="_blank" class="text-primary text-sm">+55 11 99999-9999</a>
+        </div>
+        <div class="pt-4 border-t border-gray-100">
+          <p class="text-xs text-text-muted leading-relaxed">
+            Hor&aacute;rio de atendimento: segunda a sexta, 9h &agrave;s 18h.
+            Finais de semana e feriados: retorno em at&eacute; 48h.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
