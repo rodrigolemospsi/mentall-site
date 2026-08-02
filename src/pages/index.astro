@@ -2,29 +2,33 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
+import Numeros from '../components/Numeros.astro';
 import Diferenciais from '../components/Diferenciais.astro';
 import Jornada from '../components/Jornada.astro';
 import Ecossistema from '../components/Ecossistema.astro';
+import Pilares from '../components/Pilares.astro';
 import Screenshots from '../components/Screenshots.astro';
 import Depoimentos from '../components/Depoimentos.astro';
-import Seguranca from '../components/Seguranca.astro';
 import Faq from '../components/Faq.astro';
 import DownloadCta from '../components/DownloadCta.astro';
 import Footer from '../components/Footer.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
 ---
 
 <BaseLayout>
   <Header />
   <main>
     <Hero />
+    <Numeros />
     <Diferenciais />
     <Jornada />
     <Ecossistema />
+    <Pilares />
     <Screenshots />
     <Depoimentos />
-    <Seguranca />
     <Faq />
     <DownloadCta />
   </main>
   <Footer />
+  <WhatsAppFloat />
 </BaseLayout>
